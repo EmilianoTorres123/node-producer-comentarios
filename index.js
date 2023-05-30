@@ -4,7 +4,7 @@ const { Kafka } = require('kafkajs')
 
 const kafka = new Kafka({
   clientId: 'my-app',
-  brokers: ['my-kafka-0.my-kafka-headless.jona27081.svc.cluster.local:9092']
+  brokers: ['my-kafka-0.my-kafka-headless.emilianotorres123.svc.cluster.local:9092']
 });
 
 const producer = kafka.producer()
@@ -16,7 +16,7 @@ app.options('*', cors());
 const port = 8080;
 
 app.get('/', (req, res, next) => {
-  res.send('comments api - Jonathan2708');
+  res.send('comments api - emiliano123');
 });
 
 const run = async (uId, oId, comment) => {
